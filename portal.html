@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/Site.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/w3.css" />
+    <title></title>
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="javascript:void(0);" onclick="toggleFunction()" title="School District Demo Website" class="navbar-brand"><p class="w3-bar-item"> <b>TPS Staffing</b></p> </a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="social.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> SOCIAL</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="clients.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-briefcase"></i>&nbsp; CLIENTS</a>
+            <a href="login.aspx" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-briefcase"></i>&nbsp;LOGIN PORTAL</a>
+            <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> &nbsp; HOME</a>
+
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="clients.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-briefcase"></i>&nbsp;CLIENTS</a>
+            <a href="login.aspx" class="w3-bar-item w3-button"><i class="fa fa-rss"></i> &nbsp;LOGIN PORTAL</a>
+            <a href="about.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user"></i> &nbsp; ABOUT</a>
+            <a href="social.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i>&nbsp;SOCIAL</a>
+            <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> &nbsp;CONTACT</a>
+
+        </div>
+    </div>
+    <div class="portal-image">
+        <div class="portal-image-background-overlay"></div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1 style="font-size:50px; text-align: center; color: lightblue">Client and Staff Portal</h1>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+    </div>
+    <div class="jumbotron" style="background-color: white;">
+
+        <center><img src="images/staffingpage.png" /></center>
+
+        <h2 style="text-align: center; font-size: 30px;">
+            Welcome to the client and staff portal! Please choose the best option.
+        </h2>
+        <p style="text-align: center;"><b>Please note:</b> If you are registering for the first time, please register prior to selecting other options.</p>
+    </div>
+
+    <div class="portal-image-mid">
+        <div class="portal-image-background-overlay-mid"> </div>
+        
+            <div class="jumbotron" style="background-color: transparent">
+                <div class="row">
+
+                    <div class="col-sm-3">
+                        <a href="staffingrequest.aspx" style="text-decoration:none">
+                            <div class="card" style="width: 350px; height: 300px;">
+                                <center><img src="images/staffrequest.png" /></center>
+                                <h2 style="text-align:center; color:black; font-size: 25px;"> Staffing Request</h2><br />
+                                <p style="text-align:center; color:black;">Clients can use this section to start a staffing request. After submission, clients will be provided an ID which is used to access the staffing request information for editing staff requests.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="staffingrequestinfo.aspx" style="text-decoration:none">
+                            <div class="card" style="width: 350px; height: 300px;">
+                                <center><img src="images/staffrequestinfo.png" /></center>
+                                <h3 style="text-align: center; color: black;">Staffing Request Information</h3>
+                                <p style="text-align:center; color:black;">Clients can view or modify current staffing requests associated with the Request ID.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <a href="staffingadmin.aspx" style="text-decoration:none">
+                            <div class="card" style="width: 350px; height: 300px;">
+                                <center><img src="images/staffadmin.png" /></center>
+                                <h3 style="text-align:center; color:black; font-size: 25px;"> Staffing Administration</h3><br />
+                                <p style="text-align:center; color: black;"> Root users or manager access only.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="contractinfo.aspx" style="text-decoration:none">
+                            <div class="card" style="width: 350px; height: 300px;">
+                                <center><img src="images/contractinfo.png" /></center>
+                                <h3 style="text-align:center; color:black; font-size: 25px;"> Contract Information</h3><br />
+                                <p style="text-align:center; color: black;">Root users or manager access only. Allows users to view, upload, or delete contracts.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    
+                    <div class="col-sm-3">
+                        <a href="editprofile.aspx" style="text-decoration:none">
+                            <div class="card" style="width: 350px; height: 300px;">
+                                <center><img src="images/contractinfo.png" /></center>
+                                <h3 style="text-align:center; color:black; font-size: 25px;"> Edit Profile</h3><br />
+                                <p style="text-align:center; color: black;">Staff only. Staff can update information such as resume, address, salary, education, and picture.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="staffinfo.aspx" style="text-decoration:none">
+                            <div class="card" style="width: 350px; height: 300px;">
+                                <center><img src="images/staffinfo.png" /></center>
+                                <h3 style="text-align: center; color: black;">Client Information</h3>
+                                <p style="text-align:center; color:black;">Clients can view resumes, pictures, location, education, and desired salary of potential candidates. Teachers: Please register your students to add them to your rosters.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <a href="useraccessinfo.aspx" style="text-decoration:none">
+                                <div class="card" style="width: 350px; height: 300px;">
+                                    <center><img src="images/useraccess.png" /></center>
+                                    <h3 style="text-align: center; color: black;">User Access Information</h3>
+                                    <p style="text-align:center; color:black;">Authorized users only. Can add new users and view, modify or delete any existing users in database for added security.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    <footer>
+        <div class="jumbotron-footer">
+            <hr style="color:grey" />
+            <div class="row">
+                <div class="col-sm-2">
+                    <p><img src="images/schooldistlogosm_edited.jpg" style="width: 150px; height: 90px;" /> </p><br />
+                    <p style="font-size:12px;">TPS Staffing is a full service staffing website focusing on providing information and solutions to clients and employers so that their staffing needs are met.</p>
+                </div>
+                <div class="col-sm-3">
+                    <h2 style="font-size:25px">Fun Legal Stuff</h2>
+
+                    <a href="terms.html" style="text-decoration:none;">Terms & Conditions</a><br />
+                    <a href="privacy.html" style="text-decoration:none;">Privacy Policy</a><br />
+                </div>
+                <div class="col-sm-3">
+                    <h2 style="font-size: 25px">About TPS Staffing</h2>
+                    <a href="about.html" style="text-decoration:none;">About Us</a><br />
+
+                </div>
+
+                <div class="col-sm-3">
+                    <h2 style="font-size: 25px">Home</h2>
+                    <a href="index.html" style="text-decoration:none;">Home Page</a><br />
+
+                </div>
+            </div>
+
+        </div>
+        <div class="jumbotron-footer">
+            <p style="text-align:center">&copy; 2019 &nbsp;&nbsp;TPS Staffing All Rights Reserved. &nbsp;&nbsp; <a href="sitemap.html" style="text-decoration:none;">Site Map</a></p>
+        </div>
+
+    </footer>
+    <script>
+        // Change style of navbar on scroll
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+</html>
